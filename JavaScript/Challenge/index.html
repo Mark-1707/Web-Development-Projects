@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/CSS/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>JS Chalenge</title>
+    </head>
+
+    <body>
+        <script src="static/JS/script.js"></script>
+
+        <div class="container-1">
+            <h1>Challenge 1: Age in Days</h1>
+            <div class="flex-box-container-1">
+
+                <div>
+                    <button class="btn btn-primary" onClick="getAge()">Get Age</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger" onClick="reset()">Reset</button>
+                </div>
+                
+            </div>
+
+            <div class="flex-box-container-1">
+                <div id="flex-box-result"></div>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <h2>Challenge 2 : Image Generator</h2>
+            <button class="btn btn-success" id="img-generator" onClick="generateImage()">Generate Image</button>
+
+            <div class="flex-box-container-2" id="flex-image-generator">
+
+            </div>
+        </div>
+
+        <div class="container-3">
+            <h2>Challenge 3 : Rock, Paper, Scissors</h2>
+
+            <div class="flex-box-container-3" id="flex-box-rps">
+                <img id= "rock" src="https://www.kindpng.com/picc/m/266-2667274_paper-clipart-scissors-rock-paper-scissors-jpg-hd.png" alt="rock" onClick="rpsGame(this)"/>
+                <img id= "paper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRV2XEu5esaDLvMq6dg48P84DviK95duR5FXX2U45kIhQVVS4BF7p-IVLmszy3Kz9u8DM&usqp=CAU" alt="paper" onClick="rpsGame(this)"/>
+                <img id= "scissors" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KAZtQUpeqelxjO89TJxMfAFtWsX1SCIwCXNaY3HNhfKSy5WTZKEF4K5nWX7upL5NvKo&usqp=CAU" alt= "scissors" onClick="rpsGame(this)"/>
+            </div>
+        </div>
+    </body>
+</html>
